@@ -22,12 +22,9 @@
     <nav class="navbar">
       <div id="logoimg">
         <img id="he" src="./images/logo.svg" alt="The logo of compny"/>
-        <!-- <div class="hamburgermenu"> -->
-          <!-- <a href="javascript:void(0);" class="icon" onclick="changeImage()"> -->
-            <i class="fa fa-bars"></i>
-          <!-- <object id="menu1" data="./images/icon-close.svg" onclick="changeImage()"></object> -->
-          <!-- <object id="menu2" data="./images/icon-hamburger.svg" onclick="changeImage()"></object> -->
-        <!-- </div> -->
+          <a href="javascript:void(0);" onclick="changeImage()">
+            <img src="./images/icon-hamburger.svg" id="icon"/>
+          </a>
       </div>
       <div id="navbtn">
           <a href="#" class="nav">Home</a>
@@ -43,7 +40,7 @@
     </nav>
   </header>
   <section>
-    <img src="./images/image-confetti.jpg"/>
+    <img src="./images/bg-intro-mobile.svg" height="100%" width="100%"/>
   </section>
   <section>
     <img src="./images/image-restaurant.jpg"/>
@@ -129,34 +126,17 @@
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
   <script>
-    // function changeImage() {
+    function changeImage() {
 
-    //   var x = document.getElementById("navbtn");
-    //   if (x.style.display === "none") {
-    //     x.style.display = "none";
-    //   } else {
-    //     x.style.display = "block";
-    //   }
-    // }
-    // function showhideimg()
-    // {
-    //   var x = document.getElementsByClassName("hamburgermenu");
-    //   if ()
-    //   {
-    //     document.getElementById("menu1").style.visibility = "hidden";
-    //     document.getElementById("menu1").style.visibility = "visible";
-    //   }
-
-
-    // }
-    // function myFunction() {
-    //   var x = document.getElementById("myLinks");
-    //   if (x.style.display === "block") {
-    //     x.style.display = "none";
-    //   } else {
-    //     x.style.display = "block";
-    //   }
-    // }
+      var x = document.getElementById("navbtn");
+      if (x.style.display === "flex") {
+        x.style.display = "none";
+        document.getElementById("icon").src = "./images/icon-hamburger.svg";
+      } else {
+        x.style.display = "flex";
+        document.getElementById("icon").src = "./images/icon-close.svg";
+      }
+    }
     </script>
 </body>
 </html>

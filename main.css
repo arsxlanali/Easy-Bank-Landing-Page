@@ -2,7 +2,7 @@
 * {
     padding: 0;
     margin: 0;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     font-family: 'Public Sans', sans-serif;
     
 }
@@ -10,15 +10,11 @@ body {
     font-size: 1.125rem;
     /* background-color: black; */
 }
-div.navbar, div.navbar > *{
-    display: flex;
-}
+
 
 /* Navigation Bar  */
-.hamburgermenu {
-    /* display: none; */
-    /* overflow: hidden; */
-    /* visibility: hidden; */
+#icon {
+    display: none;
 }
 .navbar {
     display: flex;
@@ -80,7 +76,7 @@ button > a {
 /* Section 1 */
 @media only screen and (max-width: 604px) {
     body {
-      background-color: lightblue;
+      /* background-color: lightblue; */
       
       
     }
@@ -92,6 +88,7 @@ button > a {
         /* height: auto; */
     }
     #navbtn {
+        display: none;
         flex-direction: column;
         position: absolute;
         /* padding: 15px 0; */
@@ -100,6 +97,7 @@ button > a {
         width: 90%;
         background-color: white;
         border-radius: 10px;
+        filter: drop-shadow(0 0 100px black);
     }
     .nav {
         
@@ -109,13 +107,6 @@ button > a {
         justify-content: center;
         text-align: center;
         padding: 15px 0;
-        
-        /* justify-content: center; */
-        /* align-items: center; */
-        /* align-self:center; */
-        /* margin: 5px 20px 0 20px; */
-        /* height: 15px; */
-        /* align-self:center; */
     }
     .requestbtn {
         position:absolute;
@@ -124,28 +115,19 @@ button > a {
     #logoimg {        
         display: flex;
         color: black;
-        background-color:yellowgreen;
         justify-content:space-between;
-        /* padding: 0 25px; */
-        /* align-self: center; */
+        padding: 0 25px;
         width: 100%;
-        /* height: 60px; */
     }
+    #icon {
+        display: flex;
+    }
+
     .fa-bars {
         color: blanchedalmond;
-        /* height: 20px; */
-        /* width: 50px; */
-
     }
-    /* #he {
-        height: auto;
-        width: auto;
-    } */
-    /* .hamburgermenu {
-        display: block;
-    } */
-    /* #menu1 {
-        display: block;
-        align-items: right;
-    } */
+    /* remove the line effect from menu */
+    .nav:hover::after{
+        content: none;
+    }
   }
