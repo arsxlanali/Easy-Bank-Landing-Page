@@ -4,24 +4,35 @@
     margin: 0;
     border: 1px solid black;
     font-family: 'Public Sans', sans-serif;
+    
+}
+body {
+    font-size: 1.125rem;
+    /* background-color: black; */
 }
 
 /* Navigation Bar  */
+.hamburgermenu {
+    /* display: none; */
+    /* overflow: hidden; */
+    /* visibility: hidden; */
+}
 .navbar {
     display: flex;
     flex-direction: row;
     justify-content:space-around;
-    height: 60px;
+    height: 70px;
     align-items: center;
-    color:hsl(0, 0%, 100%);
+    /* flex-wrap: wrap; */
+    background-color:hsl(0, 0%, 100%);
 }
 
 #navbtn {
     display: flex;
     flex-direction: row;
-    column-gap: 20px;
+    column-gap: 2vw;
     height: 100%;
-    align-items: center;
+    /* align-items: center; */
 }
 
 button > a {
@@ -33,17 +44,23 @@ button > a {
 .nav {
     color: grey;
     text-decoration: none;
-    padding: 20px 0;
+    padding: 22px 0;
     align-self: stretch;
 }
+.nav:hover {
+    color: black;
+}
 
-.nav::after {
+
+.nav:hover::after {
     content: "";
     display: block;
     position:relative;
     height: 5px;
-    background:green;
-    top: 20px;    
+    background-image: linear-gradient(to right,hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    top: 85%;    
+    transition: opacity ease-in-out 2s;
+    
 }
 
 
@@ -55,5 +72,49 @@ button > a {
     border-radius: 50px;
     outline: none;
     border: none;
-    font-size: 1rem;
+    cursor: pointer;
+    /* font-size: 0.875rem; */
 }
+
+/* Section 1 */
+@media only screen and (max-width: 604px) {
+    body {
+      background-color: lightblue;
+      
+      
+    }
+    .navbar {
+        flex-direction: column;
+        overflow: hidden;
+        /* justify-content: left; */
+        padding: 0 20px;
+        text-decoration: none;
+        font-size: 17px;
+        /* display: block; */
+    }
+    #navbtn {
+        /* display: none; */
+        flex-direction: column;
+        height: auto;
+    }
+    .nav {
+        /* height: 15px; */
+        /* align-self:center; */
+    }
+    .requestbtn {
+        position:absolute;
+        bottom: 10px;
+    }
+    .logoimg {
+        /* align-self: space-between; */
+        
+        /* justify-self: Space-between; */
+    }
+    /* .hamburgermenu {
+        display: block;
+    } */
+    /* #menu1 {
+        display: block;
+        align-items: right;
+    } */
+  }

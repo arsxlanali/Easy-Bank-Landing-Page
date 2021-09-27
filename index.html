@@ -32,8 +32,15 @@
       <div class="requestbtn">
         <input type="button" value="Request Invite" />
       </div>
+      <div class="hamburgermenu">
+        <a href="javascript:void(0);" class="icon" onclick="changeImage()">
+          <i class="fa fa-bars"></i>
+        <!-- <object id="menu1" data="./images/icon-close.svg" onclick="changeImage()"></object> -->
+        <!-- <object id="menu2" data="./images/icon-hamburger.svg" onclick="changeImage()"></object> -->
+      </div>
     </nav>
   </header>
+  
 
 
   
@@ -42,7 +49,7 @@
 
 
 
-  Next generation digital banking
+  <!-- Next generation digital banking
 
   Take your financial life online. Your Easybank account will be a one-stop-shop 
   for spending, saving, budgeting, investing, and much more.
@@ -112,6 +119,36 @@
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
+  <script>
+    function changeImage() {
+
+      var x = document.getElementById("navbtn");
+      if (x.style.display === "none") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    // function showhideimg()
+    // {
+    //   var x = document.getElementsByClassName("hamburgermenu");
+    //   if ()
+    //   {
+    //     document.getElementById("menu1").style.visibility = "hidden";
+    //     document.getElementById("menu1").style.visibility = "visible";
+    //   }
+
+
+    // }
+    // function myFunction() {
+    //   var x = document.getElementById("myLinks");
+    //   if (x.style.display === "block") {
+    //     x.style.display = "none";
+    //   } else {
+    //     x.style.display = "block";
+    //   }
+    // }
+    </script>
 </body>
 </html>
