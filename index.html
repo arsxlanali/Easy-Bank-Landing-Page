@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +21,13 @@
   <header>
     <nav class="navbar">
       <div id="logoimg">
-        <img src="./images/logo.svg" alt="The logo of compny"/>
+        <img id="he" src="./images/logo.svg" alt="The logo of compny"/>
+        <!-- <div class="hamburgermenu"> -->
+          <!-- <a href="javascript:void(0);" class="icon" onclick="changeImage()"> -->
+            <i class="fa fa-bars"></i>
+          <!-- <object id="menu1" data="./images/icon-close.svg" onclick="changeImage()"></object> -->
+          <!-- <object id="menu2" data="./images/icon-hamburger.svg" onclick="changeImage()"></object> -->
+        <!-- </div> -->
       </div>
       <div id="navbtn">
           <a href="#" class="nav">Home</a>
@@ -32,14 +39,15 @@
       <div class="requestbtn">
         <input type="button" value="Request Invite" />
       </div>
-      <div class="hamburgermenu">
-        <a href="javascript:void(0);" class="icon" onclick="changeImage()">
-          <i class="fa fa-bars"></i>
-        <!-- <object id="menu1" data="./images/icon-close.svg" onclick="changeImage()"></object> -->
-        <!-- <object id="menu2" data="./images/icon-hamburger.svg" onclick="changeImage()"></object> -->
-      </div>
+
     </nav>
   </header>
+  <section>
+    <img src="./images/image-confetti.jpg"/>
+  </section>
+  <section>
+    <img src="./images/image-restaurant.jpg"/>
+  </section>
   
 
 
@@ -121,15 +129,15 @@
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
   <script>
-    function changeImage() {
+    // function changeImage() {
 
-      var x = document.getElementById("navbtn");
-      if (x.style.display === "none") {
-        x.style.display = "none";
-      } else {
-        x.style.display = "block";
-      }
-    }
+    //   var x = document.getElementById("navbtn");
+    //   if (x.style.display === "none") {
+    //     x.style.display = "none";
+    //   } else {
+    //     x.style.display = "block";
+    //   }
+    // }
     // function showhideimg()
     // {
     //   var x = document.getElementsByClassName("hamburgermenu");
