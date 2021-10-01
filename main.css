@@ -3,14 +3,11 @@
     padding: 0;
     margin: 0;
     /* border: 1px solid black; */
-    font-family: 'Public Sans', sans-serif;
-    /* overflow-x: hidden; */
-    
+    font-family: 'Public Sans', sans-serif; 
 }
 body {
     font-size: 1.125rem;
     overflow-x: hidden;
-    /* background-color: black; */
 }
 
 
@@ -32,7 +29,6 @@ body {
     flex-direction: row;
     column-gap: 2vw;
     height: 100%;
-    /* align-items: center; */
 }
 
 button > a {
@@ -72,47 +68,35 @@ button > a {
     outline: none;
     border: none;
     cursor: pointer;
-    /* font-size: 0.875rem; */
 }
-
-
-
-
-
+.requestbtn input[type="button"]:hover {
+    background-image: linear-gradient(to right,hsla(136, 65%, 51%, 0.6), hsla(192, 70%, 51%, 0.6));
+}
 
 
 /* Section 1 */
 .section1 {
     display: flex;
     flex-direction: row;
-    /* overflow-x: hidden; */
-    /* justify-content: space-between; */
     justify-content: flex-end;
     align-items: flex-end;
     background-color: #fafafa;
-    
 }
 
 .s1div {
     height: 40vw;
-    /* background-color: hsl(0, 0%, 98%); */
 }
 #div1 {
-    /* width: 40%; */
     flex:2;
     padding: 0 0 0 7%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-self: center; */
-    /* align-content: center; */
-
 }
 #div2 {
     flex:3;
     background-image: url("./images/bg-intro-desktop.svg");
     width: 50%;
-    /* height: auto; */
     position: relative;
     background-repeat: no-repeat;
     background-size: 160%;
@@ -144,7 +128,6 @@ nav {
     padding: 7vw;
     height: auto;
     background-color:  #f4f5f7;
-    /* width: 100%; */
 }
 #s2div1 {
     padding-right:35vw;
@@ -167,15 +150,16 @@ nav {
     flex-direction: row;
     column-gap: 25px;
     row-gap: 25px;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 .articlediv {
-    /* display: flex; */
-    width: 30%;
+    width: 18.75rem;
+    height: auto;
     background-color: white;
     border-radius: 10px;
-    /* row-gap: 50px; */
+    justify-content: space-between;
+    align-self: auto;
 }
 .articlediv p,.articlediv h3 {
     padding: 10px 20px;
@@ -185,19 +169,16 @@ nav {
     height: 200px;
     object-fit: cover;
     border-radius: 10px;
-    /* display: cover; */
 }
 
 
 /* footer */
 .footer {
     background-color: hsl(233, 26%, 24%);
-    /* width: 900px; */
     height: 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /* column-gap: 10px; */
 }
 .footerdiv {
     display: flex;
@@ -217,16 +198,10 @@ svg:hover {
 .lastdiv {
     text-align: right;
     width: 40vw;
-    /* justify-content: space-evenly; */
 }
 .lastdiv p {
     padding-bottom: 0px;
 }
-/* .lastdiv2 {
-    display: flex;
-    justify-content: end;
-    text-align: end;
-} */
 a {
     text-decoration: none;
     color: #fafafa;
@@ -290,17 +265,8 @@ p {
 }
 
 @media only screen and (max-width: 700px) {
-    body {
-      /* background-color: lightblue; */
-      
-      
-    }
     .navbar {
-        /* flex-direction: column; */
-        /* overflow: hidden; */
-        /* text-decoration: none; */
         font-size: 17px;
-        /* height: auto; */
     }
     #navbtn {
         display: none;
@@ -323,9 +289,7 @@ p {
         padding: 15px 0;
     }
     #reqbutthon1 {
-        /* position:absolute; */
         display: none;
-        /* bottom: 40px; */
     }
     #logoimg {        
         display: flex;
@@ -339,38 +303,25 @@ p {
     }
     .section1 {
         flex-direction: column-reverse;
-        /* height: 800px; */
     }
     #div1 {
         top: 0;
-        /* flex:1; */
         width: 100%;
         height: 100%;
         padding: 0;
     }
     #div2 {
         display: flex;
-        /* flex:1; */
-        /* position:static; */
         background-image: url("./images/bg-intro-mobile.svg");
         width: 100%;
         height: auto;
-        
-        /* height: 30%; */
         background-size: cover;
     }
     #backimg {
         width: 100%;
-        /* height: 30%; */
         padding: 0 20px;
-        /* height: auto; */
-        /* top:-30px; */
         right:0;
-
-
-        /* background-position: center; */
     }
-
 
     /* section 2 */
     #s2div1 {
@@ -381,7 +332,6 @@ p {
 
     #s2div2 {
         flex-direction: column;
-        /* justify-content: center; */
     }
     .s2img {
         text-align: center;
@@ -400,9 +350,6 @@ p {
         flex-direction: column;
         width: 100%;
         row-gap: 30px;
-        /* justify-content: left; */
-        /* text-align: left; */
-        /* text-align: center; */
     }
     .articlediv {
         width: 100%;
@@ -430,7 +377,6 @@ p {
     #reqbutton2 {
         padding-top: 30px;
         text-align: center;
-        /* size:200px; */
     }
     .requestbtn input[type="button"] {
         height: 35px;
@@ -443,17 +389,14 @@ p {
     }
     /* footer section */
     .footer {
-        /* margin-top: 40px; */
         flex-direction: column;
         text-align: center;
         height: auto;
         row-gap: 25px;
-
     }
     .footerdiv {
         row-gap: 15px;
     }
-
     .lastdiv {
         text-align: center;
         width: 100%;
